@@ -120,7 +120,8 @@ layout: layouts/base
         <h2>Join the waitlist</h2>
         <p>Currently flo is in early preview and we'll let you know when we're on the App Store.</p>
         <input id="email" type="email" placeholder="john@doe.com" required>
-        <button id="submit">Submit</button>
+        <div class="cf-turnstile" data-callback="enableSubmit" data-sitekey="0x4AAAAAAAi7bs0DROJL1xPi" data-size="flexible"></div>
+        <button id="submit" disabled>Submit</button>
     </div>
 </div>
 
@@ -132,6 +133,10 @@ const closeModal = document.getElementById('closeModal')
 
 const emailForm = document.getElementById('email')
 const submitButton = document.getElementById('submit')
+
+function enableSubmit() {
+  submitButton.removeAttribute('disabled')
+}
 
 openModal.onclick = function() {
     modal.style.display = 'block'

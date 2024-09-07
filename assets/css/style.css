@@ -354,6 +354,7 @@ em {
     color: var(--primary-color);
     border-radius: 3px;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .js-modal button {
@@ -509,11 +510,11 @@ em {
 
     .js-modal__content {
         max-width: 500px;
-        max-height: 400px;
+        max-height: 500px;
         left: 50%;
         top: 50%;
         margin-left: -250px;
-        margin-top: -200px;
+        margin-top: -250px;
         border-radius: 10px;
     }
 }
