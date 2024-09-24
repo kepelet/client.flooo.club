@@ -203,7 +203,7 @@ em {
     display: none;
     color: #ffffff;
     background-color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 12px 20px;
     margin: 2rem 0;
 }
 
@@ -547,4 +547,12 @@ em {
     margin-bottom: 0.5rem;
     list-style: square;
     line-height: 1.8rem;
+}
+
+#appstore {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 180px;
+    border-radius: 0;
+    border: 0;
 }

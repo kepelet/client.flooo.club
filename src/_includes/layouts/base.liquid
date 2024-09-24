@@ -30,7 +30,9 @@
               </ul>
             </div>
             <div class="c-navbar__right">
-              <button class="c-button c-button--cta-navbar" id="openModal">Join the waitlist</button>
+              <a href="https://testflight.apple.com/join/913htqtU" class="c-button c-button--cta-navbar">
+                  Join the TestFlight
+              </a>
             </div>
           </div>
         </nav>
@@ -45,81 +47,6 @@
                 <button id="submit" disabled>Submit</button>
             </div>
         </div>
-
-        <script>
-        const modal = document.getElementById('modal')
-        const openModal = document.getElementById('openModal')
-        const openModal2 = document.getElementById('openModal2')
-        const closeModal = document.getElementById('closeModal')
-
-        const emailForm = document.getElementById('email')
-        const submitButton = document.getElementById('submit')
-
-        function enableSubmit() {
-          submitButton.removeAttribute('disabled')
-        }
-
-        openModal.onclick = function() {
-            modal.style.display = 'block'
-
-            setTimeout(function() {
-              emailForm.focus()
-            }, 66)
-        }
-
-        openModal2.onclick = function() {
-            modal.style.display = 'block'
-
-            setTimeout(function() {
-              emailForm.focus()
-            }, 66)
-        }
-
-        closeModal.onclick = function() {
-          modal.style.display = 'none'
-        }
-
-        document.onclick = function () {
-          if (event.target === modal) {
-            modal.style.display = 'none'
-          }
-        }
-
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' || e.keyCode === 27) {
-            modal.style.display = 'none'
-          }
-        })
-
-        submitButton.onclick = function() {
-          if (!emailForm.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-            window.alert("email doesnt seem valid")
-
-            return
-          }
-
-          const form = new FormData()
-
-          form.append('payload', emailForm.value)
-
-          fetch('https://flo.edgy0.workers.dev/', {
-            method: 'POST',
-            body: form
-          })
-          .then(res => res.text())
-          .then(text => {
-            window.alert(text)
-
-            modal.style.display = 'none'
-            emailForm.value = ''
-          })
-          .catch(err => {
-            window.alert("Something went wrong ", err.message)
-          })
-        }
-        </script>
     </main>
-
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
   </body>
 </html>
