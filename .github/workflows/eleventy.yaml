@@ -16,11 +16,9 @@ jobs:
         with:
           install_dependencies: true
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
-          projectName: ${{ vars.CF_PROJECT_NAME }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          directory: dist
-          branch: main
+          command: pages deploy dist --project-name=${{ vars.CF_PROJECT_NAME }} --commit-dirty=true
