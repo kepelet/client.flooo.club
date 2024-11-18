@@ -466,9 +466,9 @@ em {
         top: 0;
         left: 50%;
         width: 100%;
-        max-width: 1440px;
+        max-width: min(1280px, 90vw);
         position: fixed;
-        margin-left: -720px;
+        transform: translateX(-50%);
         margin-top: 10px;
         padding: 0px 20px;
         border-radius: 100px;
