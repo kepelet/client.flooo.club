@@ -13,12 +13,9 @@ jobs:
       - run: echo "LAST_COMMIT=`git rev-parse --short HEAD`" >> $GITHUB_ENV
       - name: Build
         uses: cjerrington/actions-eleventy@master
-        with:
-          install_dependencies: true
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           command: pages deploy dist --project-name=${{ vars.CF_PROJECT_NAME }} --commit-dirty=true
