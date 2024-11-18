@@ -143,7 +143,7 @@ em {
 }
 
 .c-hero {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #1e2f1e 0%, #29432a 30%, #3a5c3a 60%, #4d754d 90%, #3a5c3a 100%);
     min-height: 300px;
     color: #ffffff;
     display: flex;
