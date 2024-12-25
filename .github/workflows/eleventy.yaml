@@ -13,6 +13,7 @@ jobs:
       - run: echo "LAST_COMMIT=`git rev-parse --short HEAD`" >> $GITHUB_ENV
       - name: Build
         uses: cjerrington/actions-eleventy@master
+      - run: ls -al; ls -al dist || true
       - run: mkdir -p dist/changelog
       - name: Build Changelog
         uses: withastro/action@v3
