@@ -21,6 +21,7 @@ const { release } = Astro.props;
 			description={release.data.description}
 			image={release.data.image}
 		/>
+		<title>flo • changelog {release.data.versionNumber}</title>
 	</head><body>
 		<Header />
 		<div class="post single" transition:persist transition:name="post">
