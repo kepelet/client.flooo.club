@@ -14,8 +14,11 @@ jobs:
       - name: Build
         uses: cjerrington/actions-eleventy@master
       - run: sudo chown -R $(id -u):$(id -g) dist/
+      - run: echo "make withastro/action happy"; mkdir -p changelog/dist
       - name: Build Changelog
         uses: withastro/action@v3
+        with:
+          path: ./changelog
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
