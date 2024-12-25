@@ -27,9 +27,9 @@ const { release } = Astro.props;
 		<div class="post single" transition:persist transition:name="post">
 			<div class="version_wrapper">
 				<div class="version_info">
-				<Commit commit={release.data.commit} />
 					<div class="version_number">{release.data.versionNumber}</div>
 					<FormattedDate class="date" date={release.data.date} />
+					<Commit commit={release.data.commit} />
 				</div>
 			</div>
 			<div class="content">
