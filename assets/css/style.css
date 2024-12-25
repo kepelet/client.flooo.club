@@ -33,9 +33,22 @@
     --font-body: var(--font-family-sans-serif);
 
     --primary-color: #2B205E;
-    --secondary-color: #5D21D0;
-    --text-color: var(--primary-color);
+    --text-color: #666;
+    --card-border: #eee;
+    --card-background: #eee;
     --anchor-color: var(--primary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-bg-color: #0e1016;
+
+        --primary-color: #6a71a0;
+        --text-color: #c7c9db;
+        --card-border: #6a71a0;
+        --card-background: #0e1016;
+        --anchor-color: var(--primary-color);
+    }
 }
 
 ::selection {
@@ -44,6 +57,7 @@
 }
 
 body {
+    color: var(--text-color);
     background-color: var(--body-bg-color);
     font-size: 16px;
     font-family: var(--font-body);
@@ -232,8 +246,8 @@ em {
 .c-card {
     text-align: left;
     padding: 2rem;
-    border: 1px solid #eee;
-    background-color: #eee;
+    border: 1px solid var(--card-border);
+    background-color: var(--card-background);
 }
 
 .c-card h4 {
@@ -293,7 +307,7 @@ em {
 }
 
 .c-faq p {
-    color: #666;
+    color: var(--text-color);
 }
 
 .c-section__title {
@@ -472,7 +486,7 @@ em {
         margin-top: 10px;
         padding: 0px 20px;
         border-radius: 100px;
-        background-color: #eee;
+        background-color: var(--card-background);
     }
 
     .c-navbar__left {
