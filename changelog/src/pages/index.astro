@@ -1,0 +1,40 @@
+---
+import { getCollection, render } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+import Commit from '../components/Commit.astro';
+import Layout from '../layouts/IndexLayout.astro';
+
+const posts = await getCollection('releases')
+
+posts.sort((a, b) => +b.data.date - +a.data.date);
+---
+
+<Layout>
+	<main>
+		<h1 class="page_title">What's cooking?</h1>
+		<hr />
+		<ul class="posts" transition:name="post">
+			{
+				posts.filter(a => a.data.commit).map((post) => (
+					<li class="post">
+						<div class="version_wrapper">
+
+							<div class="version_info">
+								<a href={`/changelog/${post.id}`}>
+									<div class="version_number">{post.data.versionNumber}</div>
+									<FormattedDate class="date" date={post.data.date} />
+								</a>
+								<Commit commit={post.data.commit} />
+							</div>
+						</div>
+						<div class="content">
+							{render(post).then(({ Content }) => (
+								<Content />
+							))}
+						</div>
+					</li>
+				))
+			}
+		</ul>
+	</main>
+</Layout>
