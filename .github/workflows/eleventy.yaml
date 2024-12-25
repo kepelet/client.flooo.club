@@ -13,6 +13,10 @@ jobs:
       - run: echo "LAST_COMMIT=`git rev-parse --short HEAD`" >> $GITHUB_ENV
       - name: Build
         uses: cjerrington/actions-eleventy@master
+      - name: Build Changelog
+        uses: withastro/action@v3
+        with:
+          path: ./changelog
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
