@@ -208,7 +208,6 @@ nav {
 	font-size: type.$fontSizeSmall;
 	@media (max-width: $tablet) {
 		display: inline;
-		margin-left: 1em;
 	}
 	@media (prefers-color-scheme: dark) {
 		color: colors.color(gray, 200);
@@ -247,6 +246,8 @@ footer {
 	border-top: 1px solid colors.color(gray, 100);
 	@media (max-width: $tablet) {
 		padding: 1em 0;
+		flex-direction: column;
+		text-align: center;
 	}
 	@media (prefers-color-scheme: dark) {
 		border-color: colors.color(gray, 900);
