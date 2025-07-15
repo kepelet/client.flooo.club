@@ -50,6 +50,33 @@ layout: layouts/base
     </div>
 </div>
 
+<div class="c-section">
+    <h3 class="c-section__title">What users are saying?</h3>
+    <p class="c-section__subtitle">Real feedback—cherry-picked from the App Store—hear what users love (or hate) about flo.</p>
+
+    <div class="c-testimonial">
+        {% for review in reviews.reviews %}
+        <div class="c-card--secondary c-card--secondary-{{ review.size }}">
+            <h5>{{ review.title }}</h5>
+
+            <div class="c-testimonial__rating">
+                {% assign stars = review.rating %}
+                {% for i in (1..5) %}
+                    {% if i <= stars %}★{% endif %}
+                {% endfor %}
+            </div>
+
+            <p>{{ review.content }}</p>
+
+            <div class="c-testimonial__author">
+                <strong>{{ review.author }}</strong>
+                <span>{{ review.date }}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
 <div id="faq" class="c-faq">
     <h4>FAQs</h4>
     <div class="c-faq__section">
