@@ -616,7 +616,6 @@ em {
 .c-testimonial__author {
     margin-top: auto;
     padding-top: 1rem;
-    border-top: 1px solid var(--card-border);
 }
 
 .c-testimonial__author strong {
