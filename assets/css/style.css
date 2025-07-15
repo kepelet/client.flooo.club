@@ -570,3 +570,129 @@ em {
     border-radius: 0;
     border: 0;
 }
+
+.c-testimonial {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.c-card--secondary {
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.c-card--secondary h5 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.c-card--secondary p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.c-testimonial__rating {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+.c-testimonial__author {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.c-testimonial__author strong {
+    color: var(--primary-color);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.c-testimonial__author span {
+    color: var(--text-color);
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.c-card--secondary-large {
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.c-card--secondary-small {
+    grid-row: span 1;
+    min-height: 180px;
+}
+
+.c-card--secondary-medium {
+    grid-row: span 1;
+    min-height: 200px;
+}
+
+.c-card--secondary-wide {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+@media screen and (min-width: 768px) {
+    .c-testimonial {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+    }
+
+    .c-card--secondary-wide {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .c-testimonial {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .c-card--secondary-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .c-card--secondary-wide {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-testimonial {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .c-card--secondary-large,
+    .c-card--secondary-wide {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .c-testimonial__rating {
+        color: #ffb347;
+    }
+}
