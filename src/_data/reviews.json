@@ -1,0 +1,100 @@
+{
+    "reviews": [
+        {
+            "title": "Not work",
+            "rating": 1,
+            "content": "trash",
+            "author": "Ghhkkhggjhj",
+            "date": "Jun 17, 2025",
+            "size": "small"
+        },
+        {
+            "title": "Works perfectly",
+            "rating": 5,
+            "content": "Works perfectly! Definitely the best navidrome client on iOS. If the developer is reading this; a \"sort by genre\" option would be great!",
+            "author": "aliii :3",
+            "date": "Jun 13, 2025",
+            "size": "medium"
+        },
+        {
+            "title": "Great app with some bugs",
+            "rating": 4,
+            "content": "The app works well for music on the go. I do experience one annoying bug where music tracks will restart part way through playback, though I'm not certain if this is a bug in flo or in my Navidrome server! Either way, great app.",
+            "author": "mikethebone",
+            "date": "Jun 10, 2025",
+            "size": "wide"
+        },
+        {
+            "title": "Excellent client",
+            "rating": 5,
+            "content": "Able to access music and playlists. No issues. I would wish for Apple Watch support",
+            "author": "PleasantTiming",
+            "date": "May 17, 2025",
+            "size": "large"
+        },
+        {
+            "title": "Great",
+            "rating": 5,
+            "content": "Best IOS Navidrome client on the App Store.",
+            "author": "Sam Demers",
+            "date": "May 11, 2025",
+            "size": "wide"
+        },
+        {
+            "title": "Extremely good music app",
+            "rating": 5,
+            "content": "Flo is a great app with a very nice modern design and connects flawlessly to my Navidrome server. Only things is, I can’t stream my songs to my HomePod via AirPlay. I don’t know why it is so but the button is grey and disabled. Overall it’s a fantastic app to stream your music to your iPhone, without a need for any subscription whatsoever.",
+            "author": "christianlde",
+            "date": "May 11, 2025",
+            "size": "large"
+        },
+        {
+            "title": "Does what it does",
+            "rating": 4,
+            "content": "Great app - the logins working fine. But one downside for me personally, the offline use of music is not always working. A few features would be nice to have: Queues Artist Images",
+            "author": "mkayontour",
+            "date": "Jan 11, 2025",
+            "size": "wide"
+        },
+        {
+            "title": "ssl",
+            "rating": 1,
+            "content": "unable to login. i use tailscale. app transport security policy..",
+            "author": "cade2009",
+            "date": "Jan 2, 2025",
+            "size": "large"
+        },
+        {
+            "title": "Login",
+            "rating": 1,
+            "content": "Ständig muss ich mich neu einloggen, geht garnicht",
+            "author": "iFireFighter93",
+            "date": "Dec 16, 2024",
+            "size": "small"
+        },
+        {
+            "title": "Does what it says on the tin!",
+            "rating": 5,
+            "content": "Great app that I can just tell is going to get even better as time goes on. Really solid foundations and a nice UX. Excited to see it grow :)",
+            "author": "JohnDoe8364",
+            "date": "Oct 24, 2024",
+            "size": "small"
+        },
+        {
+            "title": "I like the potential",
+            "rating": 4,
+            "content": "Barebones at the moment but I like the potential so far.",
+            "author": "AJV_20",
+            "date": "Oct 19, 2024",
+            "size": "small"
+        },
+        {
+            "title": "不错，可惜不支持中文。",
+            "rating": 5,
+            "content": "体验不错，可惜不支持中文。希望加入中文版!",
+            "author": "指尖上的舞者",
+            "date": "Oct 4, 2024",
+            "size": "small"
+        }
+    ]
+}
