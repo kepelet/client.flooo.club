@@ -1,6 +1,30 @@
 {
     "reviews": [
         {
+            "title": "Self hosting is awesome",
+            "rating": 5,
+            "content": "simple, clean and gets the job done",
+            "author": "surajsbmn",
+            "date": "Aug 31, 2025",
+            "size": "small"
+        },
+        {
+            "title": "great",
+            "rating": 4,
+            "content": "it's great, it's just missing the functionality to make playlists, so i had to do that on my laptop. other than that, great ui, ux all good",
+            "author": "zak17154",
+            "date": "Aug 28, 2025",
+            "size": "wide"
+        },
+        {
+            "title": "Great",
+            "rating": 5,
+            "content": "Very promising. Connects well and is very snappy. Hope to see Apple Watch integration soon.",
+            "author": "Kwast123",
+            "date": "Jul 24, 2025",
+            "size": "medium"
+        },
+        {
             "title": "Not work",
             "rating": 1,
             "content": "trash",
