@@ -1,6 +1,94 @@
 {
     "reviews": [
         {
+            "title": "Excellent!",
+            "rating": 5,
+            "content": "Works just as advertised. Reliable and with a nice GUI and UX. Has some nice additional features like statistics.",
+            "author": "Schneppi",
+            "date": "Jan 29, 2026",
+            "size": "small"
+        },
+        {
+          "title": "Only https",
+          "rating": "1",
+          "content": "Only https",
+          "author": "HITMAN1515",
+          "date": "Jan 25, 2026",
+          "size": "small"
+        },
+        {
+          "title": "Very good app",
+          "rating": "5",
+          "content": "Very nice app, lightweight with all necessary options and offline play is a must.",
+          "author": "Zickox",
+          "date": "Jan 17, 2026",
+          "size": "small"
+        },
+        {
+          "title": "Quite usable!",
+          "rating": "5",
+          "content": "Has some rough edges, but man, this project harkens back to Winamp and the days when software was fun. May this project be the standard bearer in the fight against techno-feudalism.",
+          "author": "anchann84",
+          "date": "Jan 05, 2026",
+          "size": "small"
+        },
+        {
+            "title": "Almost, almost",
+            "rating": 4,
+            "content": "It works\n\nBut\n\nSometimes it crashes, to me it happened when searching a song in the song submenu, then when i closed and reopened the app it showed a black screen, to fix i had to reinstall the app.\n\nDownloads shouldn’t have a whole section of the application to themselves, i think it should be a small section in the homepage, since cached songs are only there to keep the possibility of listening to music even when offline.\n\nThe library section should be on par with the home section, also, it needs a lot more options to search for music, i mean, genres, recently added albums, recently played albums, favourites (songs, albums, artists), there’s too much friction when navigating to the song or album i want but don’t quite remember\n\nFinal note, why the hell are images low res, i worked so hard to get high quality covers for my library and i can’t enjoy them? C’mon…\n\nAside from these four points, the app works, but you must remember to setup the save login info, otherwise you’ll have to login every time you open the app. Lyrics i presume are WIP\n\nI hope all i wrote will become obsolete and the app will work flawlessly, it gives a spin to the Navidrome iOS music player which Amperfy doesn’t have, since it’s so boring and “Just Works”",
+            "author": "the_maniac_of_reading",
+            "date": "Dec 27, 2025",
+            "size": "wide"
+        },
+        {
+            "title": "Almost perfect!",
+            "rating": 4,
+            "content": "Would like to see a EQ interface and maybe a playback speed setting",
+            "author": "ixdvsyens",
+            "date": "Nov 11, 2025",
+            "size": "small"
+        },
+        {
+            "title": "Only HTTPS?",
+            "rating": 1,
+            "content": "It only works with https:// so if your server is only http:// do not bother to try it",
+            "author": "NickGarb",
+            "date": "Nov 5, 2025",
+            "size": "small"
+        },
+        {
+            "title": "Login",
+            "rating": 1,
+            "content": "If your trying to login to your server, and your using Tailscale the login fails",
+            "author": "BGPAS65000",
+            "date": "Nov 3, 2025",
+            "size": "medium"
+        },
+        {
+            "title": "🙄",
+            "rating": 3,
+            "content": "Не смог оценить, попытка подключиться к 192.168.50.х обратилась ошибкой. Странно, что в сообщении с ошибкой указано, что диапазон ограничен 192.168.0.0/16, т.е вроде бы все должно работать.",
+            "author": "vladislav.yakovlev",
+            "date": "Nov 3, 2025",
+            "size": "medium"
+        },
+        {
+            "title": "Best Navidrome Client on the App Store",
+            "rating": 5,
+            "content": "Open source and self hosting is amazing and my heartfelt thanks to the developer for developing this aesthetically pleasing client.",
+            "author": "Sourav90",
+            "date": "Oct 7, 2025",
+            "size": "wide"
+        },
+        {
+            "title": "Host your own media, use this to play back",
+            "rating": 5,
+            "content": "(Finally I can write a review after being on the betas) \n Just want to say, thanks for the polished app, Indie devs really are the best.",
+            "author": "iamgroot11",
+            "date": "Sep 10, 2025",
+            "size": "wide"
+        },
+        {
             "title": "Self hosting is awesome",
             "rating": 5,
             "content": "simple, clean and gets the job done",
@@ -11,10 +99,10 @@
         {
             "title": "great",
             "rating": 4,
-            "content": "it's great, it's just missing the functionality to make playlists, so i had to do that on my laptop. other than that, great ui, ux all good",
+            "content": "it’s great, it’s just missing the functionality to make playlists, so i had to do that on my laptop. other than that, great ui, ux all good",
             "author": "zak17154",
             "date": "Aug 28, 2025",
-            "size": "wide"
+            "size": "medium"
         },
         {
             "title": "Great",
@@ -22,7 +110,7 @@
             "content": "Very promising. Connects well and is very snappy. Hope to see Apple Watch integration soon.",
             "author": "Kwast123",
             "date": "Jul 24, 2025",
-            "size": "medium"
+            "size": "large"
         },
         {
             "title": "Not work",
