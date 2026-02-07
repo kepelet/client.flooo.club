@@ -605,6 +605,7 @@ em {
     line-height: 1.6;
     margin-bottom: 1rem;
     flex-grow: 1;
+    white-space: pre-line;
 }
 
 .c-testimonial__rating {
