@@ -11,7 +11,7 @@ const releases = defineCollection({
       image: z.object({
         src: image(),
         alt: z.string(),
-      }),
+      }).optional(),
       commit: z.string(),
       date: z.date({ coerce: true }),
     }),
